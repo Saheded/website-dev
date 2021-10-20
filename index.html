@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Resources/Vector/logo.png">
+    <script defer src="./script.js"></script>
+    <title>Коттедж в красноярске</title>
+</head>
+<body>
+    <header style="z-index: 99;">
+        <ul class="container dark flex" style="font-size: 2vh">
+            <li>
+                <a class="block button dark dark-animation" href="#area">Участок</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#cottage">Коттедж</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#buildings">Постройки</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#garden">Сад</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#photoalbum">Галерея</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#map">Карта</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+<!--        <span id="up" style="height: 10.5vh; display:block; width: 100%;"></span>
+-->        <a class="block up-button" title="Наверх">
+            <svg width="24" height="38" viewBox="0 0 24 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 38L13.5 2L10.5 2L10.5 38L13.5 38Z" fill="#090A09" />
+            </svg><br />
+            Наверх
+        </a>
+        <div class="social-list">
+            <a href="#" class="social-item">
+                <img class="social-image" src="./Resources/Vector/Telegram.png" />
+            </a>
+            <a href="#" class="social-item">
+                <img class="social-image" src="./Resources/Vector/WhatsApp.png" />
+            </a>
+            <a href="#" class="social-item">
+                <img class="social-image" src="./Resources/Vector/Mail.ru.png" />
+            </a>
+        </div>
+        <div style="background-image: url(./Resources/Raster/thumbnail.jpg); background-repeat: no-repeat; background-size: cover;">
+            <h1 style=" height: 15vh; margin: 0 auto 0 auto; padding: 15vh 0 45vh 0;">
+                Дачный участок с жилым домом-дачей, баней,<br /> бассейном и мастерской
+            </h1>
+            <div style="background-position:center; background-color: rgba(66, 62, 66, 0.50); color: #E6DBD1; padding: 8vh 20% 8vh 20%; ">
+                <p style="text-align: center; height: 10vh;">
+                    Продается двух-этажный коттедж круглогодичного проживания в черте города Красноярска на территории СНТ «Маяк» (район п. Удачный, в направлении экопарка «Гремячья грива») по адресу ул. Светлая, дом 104. На автомобиле от дома до ТК «На Свободном» 15 минут.
+                </p>
+            </div>
+        </div>
+        <div id="area" class="container">
+            <h2>Участок</h2>
+            <div class="content  grid">
+                <p>
+                    Площадь участка 15 соток. Участок ровный, солнечный, расположен в тупиковой части улицы, проезжающие машин нет. Лес в достаточном удалении (клещей нет).
+                </p>
+                <div class="slider" id="area-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide" data-image="./Resources/Raster/Area/area1.jpg">
+                            <p class="slide-caption visible">В сторону мастерской</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area2.jpg">
+                            <p class="slide-caption">Со стороны малой теплицы</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area3.jpg">
+                            <p class="slide-caption">Каменная горка с баней</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area4.jpg">
+                            <p class="slide-caption">Яблоня с мастерской</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area5.jpg">
+                            <p class="slide-caption">Скамейки у кострища</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area6.jpg">
+                            <p class="slide-caption">Тропа вдоль бани</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area7.jpg">
+                            <p class="slide-caption">Пруд и скамья-качель</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area8.jpg">
+                            <p class="slide-caption">Кострище</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area9.jpg">
+                            <p class="slide-caption">За беседкой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area10.jpg">
+                            <p class="slide-caption">Площадка перед мастерской</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area11.jpg">
+                            <p class="slide-caption">Спорт-площадка</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area12.jpg">
+                            <p class="slide-caption">Грядки</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area13.jpg">
+                            <p class="slide-caption">Скамьи с кострищем</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Area/area14.jpg">
+                            <p class="slide-caption">Скамья-качель</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-previous">Previous</button>
+                        <button class="slider-next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cottage" class="container">
+            <h2>Коттедж</h2>
+            <div class="content grid">
+                <p>
+                    Дом двухэтажный построенный по каркасной технологии.
+                    Отопление обеспечивается электрическим котлом, своя скважина, водоподготовка (грубая очистка и умягчитель), два септика общим объемом 15м<sup>3</sup> (откачивается по необходимости).
+                    Имеется камин, три спальни оснащены кондиционерами, подвал, техкомната, гараж на 2 машины.
+                    1 этаж: кухня, гостиная, гостевая комната с\у совместный, душевая кабина.
+                    2 этаж: 3 спальни, ванна, туалет раздельно.
+                    Между 1-ым и 2-ым этажами находится комната-тренажерный зал
+                    Балкон.
+                </p>
+                <div class="slider" id="cottage-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage1.jpg">
+                            <p class="slide-caption">Кухня</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage2.jpg">
+                            <p class="slide-caption">Балкон</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage3.jpg">
+                            <p class="slide-caption">Лестница</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage4.jpg">
+                            <p class="slide-caption">Большая спальня</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage5.jpg">
+                            <p class="slide-caption">Умывальник на втором этаже</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage6.jpg">
+                            <p class="slide-caption">Ванная на втором этаже</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage7.jpg">
+                            <p class="slide-caption">Угол большой спальни</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage8.jpg">
+                            <p class="slide-caption">Туалет на втором этаже</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage9.jpg">
+                            <p class="slide-caption">Обеденный стол</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage10.jpg">
+                            <p class="slide-caption">Кухня</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage11.jpg">
+                            <p class="slide-caption">Кухня</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage12.jpg">
+                            <p class="slide-caption">Туалет на первом этаже</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage13.jpg">
+                            <p class="slide-caption">Душевая на первом этаже</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage14.jpg">
+                            <p class="slide-caption">Гостевая комната</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage15.jpg">
+                            <p class="slide-caption">Камин в зале</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage16.jpg">
+                            <p class="slide-caption">Приборы в кательной</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage17.jpg">
+                            <p class="slide-caption">Подвал</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Cottage/cottage18.jpg">
+                            <p class="slide-caption">Приборы в кательной</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-previous">Previous</button>
+                        <button class="slider-next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buildings" class="container">
+            <h2>Постройки</h2>
+            <div class="content grid">
+                <p>
+                    Баня: стены бани выполнены из пенобетона, парилка обшита кедром, душ с горячей\холодной водой, с/у, комната отдыха, бассейн на улице 3х4х1.7м (только летний) Гараж.
+                </p>
+                <div class="slider" id="buildings-sauna-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide" data-image="./Resources/Raster/Buildings/Sauna/sauna1.jpg">
+                            <p class="slide-caption">Вид на баню</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-previous">Previous</button>
+                        <button class="slider-next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid content">
+                <p>
+                    Мастерская: подсобное помещение для столярных работ. Имеется дровяная печь для обогрева зимой и комфортной работы.
+                    Мастерская совмещена с комнатой для содержания домашних животных (кур, уток, кроликов и др. мелких домашних животных), пристроен вольер для выгула.
+                </p>
+                <div class="slider" id="buildings-workshop-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide" data-image="./Resources/Raster/Buildings/Workshop/workshop1.jpg">
+                            <p class="slide-caption">Вид на мастерскую</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-previous">Previous</button>
+                        <button class="slider-next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid content">
+                <p>
+                    Места отдыха: кострище, беседка (гриль), качели-скамья, баскетбольная площадка (стрит-болл).
+                </p>
+                <div class="slider" id="buildings-rest_place-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide" data-image="./Resources/Raster/Buildings/Rest_place/rest_place1.jpg">
+                            <p class="slide-caption">За беседкой</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-previous">Previous</button>
+                        <button class="slider-next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="garden" class="container">
+            <h2>Сад</h2>
+            <div class="content grid">
+                <p>
+                    В саду представлено достаточное разнообразие плодовых деревьев, ягодных и декоративных кустарников, имеется огород и три теплицы для овощеводства, цветники с многолетними растениями.
+                    Вишня, сливы, ранетки, яблоня, жимолость, красная и черная смородины (привезены из питомников Челябинска и п. Минино, местные питомники).
+                    Декоративные деревья представлены пихтой, кедром, белой сиренью, калиной Бульденеж, туей, черноплодной рябиной.
+                    Свыше 50 сортов многолетних цветов и декоративных растений.
+                </p>
+                <div class="slider" id="garden-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden1.jpg">
+                            <p class="slide-caption">Напротив мастерской</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden2.jpg">
+                            <p class="slide-caption">Пруд</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden3.jpg">
+                            <p class="slide-caption">Пруд с качелями</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden4.jpg">
+                            <p class="slide-caption">Ёлка зимой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden5.jpg">
+                            <p class="slide-caption">Напротив дома</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden6.jpg">
+                            <p class="slide-caption">За беседкой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden7.jpg">
+                            <p class="slide-caption">За домом</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden8.jpg">
+                            <p class="slide-caption">Рядом с уличным душом</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden9.jpg">
+                            <p class="slide-caption">Около кострища</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden10.jpg">
+                            <p class="slide-caption">Кедр зимой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden11.jpg">
+                            <p class="slide-caption">За беседкой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden12.jpg">
+                            <p class="slide-caption">За беседкой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden13.jpg">
+                            <p class="slide-caption">Пруд</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden14.jpg">
+                            <p class="slide-caption">Вдоль бани</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden15.jpg">
+                            <p class="slide-caption">Перед баней</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden16.jpg">
+                            <p class="slide-caption">Качели с прудом</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden17.jpg">
+                            <p class="slide-caption">Вход у калитки</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden18.jpg">
+                            <p class="slide-caption">Грядка с клубникой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden19.jpg">
+                            <p class="slide-caption">"Разбитое сердце" напротив мастерской</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden20.jpg">
+                            <p class="slide-caption">Мостик над прудом</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden21.jpg">
+                            <p class="slide-caption">На поляне за кострищем</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden22.jpg">
+                            <p class="slide-caption">Рядом с каменной горкой</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden23.jpg">
+                            <p class="slide-caption">У кострища</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden24.jpg">
+                            <p class="slide-caption">Каменная горка</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden25.jpg">
+                            <p class="slide-caption">Около качели</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden26.jpg">
+                            <p class="slide-caption">Около качели</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden27.jpg">
+                            <p class="slide-caption">За кострищем</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden28.jpg">
+                            <p class="slide-caption">В теплице</p>
+                        </div>
+                        <div class="slide" data-image="./Resources/Raster/Garden/garden29.jpg">
+                            <p class="slide-caption">За беседкой</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="slider-previous">Previous</button>
+                        <button class="slider-next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="photoalbum" class="container">
+            <h2>Галерея</h2>
+            <div class="slider" style="height: 650px" id="gallery-slider">
+                <div class="slider-wrapper">
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery1.jpg">
+                        <p class="slide-caption-mod">Вид с балкона</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery2.jpg">
+                        <p class="slide-caption-mod">План дома 1 этаж</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery3.jpg">
+                        <p class="slide-caption-mod">План дома 2 этаж</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery4.jpg">
+                        <p class="slide-caption-mod">Камин с креслом-качалкой</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery5.jpg">
+                        <p class="slide-caption-mod">Камин ночью</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery6.jpg">
+                        <p class="slide-caption-mod">Камин</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery7.jpg">
+                        <p class="slide-caption-mod">План бани</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery8.jpg">
+                        <p class="slide-caption-mod">Ёлка с игрушками зимой</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery9.jpg">
+                        <p class="slide-caption-mod">Куры в загоне рядом с мастерской</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery10.jpg">
+                        <p class="slide-caption-mod">Куриный загон внутри</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery11.jpg">
+                        <p class="slide-caption-mod">Куриный загон снаружи</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery12.jpg">
+                        <p class="slide-caption-mod">Участок сверху</p>
+                    </div>
+                    <div class="slide" data-image="./Resources/Raster/Gallery/gallery13.jpg">
+                        <p class="slide-caption-mod">План участка</p>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-previous">Previous</button>
+                    <button class="slider-next">Next</button>
+                </div>
+            </div>
+        </div>
+        <section id="map" class="container">
+            <h2>Карта</h2>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e8e3e4ce77a101196a44c13f1d839c5e244e82b46ec37eb07e391fc3c24d849&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+    </main>
+    <footer>
+        <div id="contacts" class="container">
+            <ul class="flex container">
+                <li>
+                    <a href="mailto:cottedgesvetlaya@mail.ru" class="contacts-button block light light-animation">Почта: cottedgesvetlaya@mail.ru</a>
+                </li>
+                <li>
+                    <a href="#" class="contacts-button block light light-animation">Телефон:</a>
+                </li>
+                <li>
+                    <a href="#" class="contacts-button block light light-animation">Контактная форма</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="container dark flex" style="font-size: 2vh; z-index: 98;">
+            <li>
+                <a class="block button dark dark-animation" href="#area">Участок</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#cottage">Коттедж</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#buildings">Постройки</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#garden">Сад</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#photoalbum">Галерея</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#map">Карта</a>
+            </li>
+            <li>
+                <a class="block button dark dark-animation" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
