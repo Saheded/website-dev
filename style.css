@@ -136,6 +136,7 @@ h4 {
     background-size: cover;
     opacity: 0;
     transition: opacity 500ms linear;
+    background-position: center;
 }
 
 .slide-caption {
